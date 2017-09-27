@@ -1,0 +1,14 @@
+<div class="login-form">
+  <p>
+    <md-form-field class="example-full-width">
+      <input mdInput placeholder="Username" [(ngModel)]="user.email"/>
+    </md-form-field>
+    <md-form-field class="example-full-width">
+    <input mdInput placeholder="Password" [(ngModel)]="user.pass"/>
+    </md-form-field>
+  </p>
+  <div class="button-row">
+    <button md-raised-button (click)="submitData()">Submit</button>
+    <button md-raised-button (click)="resetBtn()">Reset</button>
+  </div>
+</div>
